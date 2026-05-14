@@ -16,7 +16,10 @@ Open Challenge
 During the Open Challenge, the ultrasonic sensor mounted on the robot continuously monitors the distance from the outer wall and keeps the robot at a constant distance from it. In the first turn, the color sensor detects the blue stripe and sends a signal to the control unit to rotate the servo motor by a specified amount. After that, the orange stripe appears, which is also detected by the system and triggers the same type of reaction. Changes in the inner wall do not need to be considered because the robot always keeps a distance that allows it to avoid it while following the other wall. After every completed turn, a counter increases by one. When the counter reaches 12, meaning 3 laps, the vehicle stops.
 
 Obstacle Challenge
-During the Obstacle Challenge, if the robot detects a green obstacle while moving forward, the servo motor receives a signal and begins avoiding the obstacle in the direction determined by the color. After passing the obstacle, the robot returns to the previous distance from the outer wall. When the robot detects the blue and orange stripes marking a turn, it performs the turn in the same way as in the Open Challenge. After every completed turn, a counter increases by one. When the counter reaches 12, meaning 3 laps, the vehicle stops.
+During the Obstacle Challenge, if the robot detects a green obstacle while moving forward, the servo motor receives a signal and begins avoiding the obstacle in the direction determined by the color. After passing the obstacle, the robot returns to the previous distance from the outer wall. When the robot detects the blue and 
+orange stripes marking a turn, it performs the turn in the same way as in the Open Challenge. After every completed turn, a counter increases by one. When the counter reaches 12, meaning 3 laps, the vehicle stops.
+
+When the program starts, the motor that drives the rear wheels starts running. As soon as it detects a wall at a distance of 45 cm, the motor that turns the front wheels begins rotating them by 50 degrees. Then, the gyroscope detects when the car has turned 90 degrees and turns the wheels back to their original position. This process is repeated 12 times, allowing the car to complete 3 laps, and finally it stops at the starting position.
 
 
 
